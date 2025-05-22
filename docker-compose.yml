@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: arm64v8/mysql:8.0
+    container_name: dvwa-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: p@ssw0rd
+      MYSQL_ROOT_HOST: '%'
+    command: --default-authentication-plugin=mysql_native_password
+
+  dvwa:
+    build: .
+    image: dvwa-arm64
+    container_name: dvwa
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "4280:80"
+    environment:
+      DB_SERVER: dvwa-mysql
+      DB_DATABASE: dvwa
+      DB_USER: dvwa
+      DB_PASSWORD: p@ssw0rd
+
