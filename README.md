@@ -13,7 +13,7 @@ Para executar o DVWA neste ambiente, siga os passos abaixo:
 1. **Clone o repositório:**
 
    ```bash
-   git clone git@github.com:antonioforster/dvwa-docker.git
+   git clone https://github.com/antonioforster/dvwa-docker.git
    cd dvwa-docker
    ```
 
