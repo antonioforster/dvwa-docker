@@ -43,7 +43,7 @@ Para executar o DVWA neste ambiente, siga os passos abaixo:
 ##  Requisitos
 
 - **Docker** e **Docker Compose** instalados no sistema.
-- Ambiente Ubuntu virtualizado em Mac com Apple Silicon (utilizando ferramentas como [UTM](https://mac.getutm.app/) ou [Parallels Desktop](https://www.parallels.com/br/products/desktop/)).
+- Ambiente Ubuntu virtualizado em Mac com Apple Silicon utilizando Vmware Fusion. Outros hypervisors para Mac Silicon não foram testados. 
 
 ---
 
