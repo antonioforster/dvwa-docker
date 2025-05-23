@@ -27,7 +27,7 @@ Para executar o DVWA neste ambiente, siga os passos abaixo:
 
 3. **Acesse a aplicação:**
 
-   Abra o navegador e vá para: [http://localhost:8080](http://localhost:8080)
+   Abra o navegador e vá para: [http://localhost/](http://localhost/)
 
 4. **Configure o banco de dados:**
 
