@@ -1,3 +1,64 @@
+## 🐧 Port para Ubuntu Virtualizado em Mac com Apple Silicon
+
+Este projeto é um **port do Damn Vulnerable Web Application (DVWA)** adaptado para execução em um ambiente **Ubuntu virtualizado em Macs com chip Apple Silicon (M1, M2, M3)**. O objetivo é fornecer uma plataforma prática e acessível para estudos e experimentações em segurança de aplicações web, utilizando contêineres Docker em um ambiente controlado.
+
+> **Uso Educacional**: Este ambiente foi criado exclusivamente para fins educacionais e de pesquisa em segurança. **Não deve ser exposto à internet pública** ou utilizado em ambientes de produção.
+
+---
+
+##  Instruções de Instalação
+
+Para executar o DVWA neste ambiente, siga os passos abaixo:
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone git@github.com:antonioforster/dvwa-docker.git
+   cd dvwa-docker
+   ```
+
+2. **Inicie os contêineres com Docker Compose:**
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   Isso iniciará os serviços necessários (Apache, MySQL, PHP) e disponibilizará o DVWA.
+
+3. **Acesse a aplicação:**
+
+   Abra o navegador e vá para: [http://localhost:8080](http://localhost:8080)
+
+4. **Configure o banco de dados:**
+
+   Na interface do DVWA, clique em **"Create / Reset Database"** para configurar o banco de dados inicial.
+
+5. **Credenciais padrão:**
+
+   - **Usuário:** `admin`
+   - **Senha:** `password`
+
+---
+
+##  Requisitos
+
+- **Docker** e **Docker Compose** instalados no sistema.
+- Ambiente Ubuntu virtualizado em Mac com Apple Silicon (utilizando ferramentas como [UTM](https://mac.getutm.app/) ou [Parallels Desktop](https://www.parallels.com/br/products/desktop/)).
+
+---
+
+##  Aviso de Segurança
+
+O DVWA é intencionalmente vulnerável e deve ser utilizado **apenas em ambientes isolados**. **Não exponha** este ambiente a redes públicas ou ambientes de produção.
+
+---
+
+##  Conteúdo Original
+
+O conteúdo original do DVWA, incluindo informações sobre a aplicação, avisos de segurança, licenciamento e instruções adicionais, permanece abaixo para referência.
+
+
+
 # DAMN VULNERABLE WEB APPLICATION
 
 Damn Vulnerable Web Application (DVWA) is a PHP/MariaDB web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
