@@ -21,7 +21,7 @@ services:
     depends_on:
       - mysql
     ports:
-      - "4280:80"
+      - "80:80"
     environment:
       DB_SERVER: dvwa-mysql
       DB_DATABASE: dvwa
